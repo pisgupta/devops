@@ -1,5 +1,5 @@
 # Use official Gradle + JDK image
-FROM gradle:8.7.0-jdk17 AS build
+FROM gradle:9.4.1-jdk17 AS build
 
 # Set working directory
 WORKDIR /app
