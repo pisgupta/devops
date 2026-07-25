@@ -19,5 +19,8 @@ WORKDIR /app
 # Copy your project files into the container
 COPY . .
 
-# Use the Gradle Wrapper to build (it automatically matches your project's required gradle version)
+# Give execution permission to the gradlew script
+RUN chmod +x ./gradlew
+
+# Now run the build
 RUN ./gradlew assembleDebug
